@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Assignment 2</title>
+    </head>
+    <body>
+        <div id="heading" class="bg-light text-center py-4">
+            <h4>Assignment 2</h4>
+        </div>
+    
+        <div id="home-screen" class="d-flex flex-column align-items-center my-4">
+            <a class="btn btn-primary mb-2" href="#reversestring">String Reverse</a>
+            <a class="btn btn-primary mb-2" href="#checkPalindrome">Palindrome Checker</a>
+            <a class="btn btn-primary mb-2" href="#bill">Tip Calculator</a>
+        </div>
+    
+        <hr>
+    
+        <section id="reversestring" class="container my-4 p-4 bg-white shadow">
+            <p class="font-weight-bold">String Reverse</p>
+            <form id="myForm1">
+                <div class="form-group">
+                    <input type="text" name="inputStr" id="inputStr" class="form-control" placeholder="Enter a String">
+                </div>
+                <button type="button" onclick="reversestring()" class="btn btn-success">Reverse</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+            <p id="result1"></p>
+        </section>
+    
+        <section id="checkPalindrome" class="container my-4 p-4 bg-white shadow">
+            <p class="font-weight-bold">Palindrome Checker</p>
+            <form id="myForm2">
+                <div class="form-group">
+                    <input type="text" id="inputNum" name="inputNum" class="form-control" placeholder="Enter a Number">
+                </div>
+                <button type="button" class="btn btn-success" onclick="nextNum()">Next</button>
+                <button type="button" class="btn btn-primary" onclick="checkPalindromes()">Check</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+            <p id="result2"></p>
+        </section>
+    
+        <section id="bill" class="container my-4 p-4 bg-white shadow">
+            <p class="font-weight-bold">Tip Calculator</p>
+            <form id="myForm3">
+                <div class="form-group">
+                    <input type="text" id="subTotal" name="subTotal" class="form-control" placeholder="Enter Subtotal Amount" oninput="validateNumber(this)">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="tipPercentage" name="tipPercentage" class="form-control" placeholder="Enter Percentage of Tip" oninput="validateNumber(this)">
+                </div>
+                <button type="button" class="btn btn-success" onclick="calculateTotal()">Calculate</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+            <p id="result3"></p>
+        </section>
+    
+        <footer class="text-center py-3 bg-light">
+            <p>&copy; 2024 Sriharshita Avadhanam</p>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+</body>
+</html>

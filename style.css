@@ -1,0 +1,145 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+h4{
+    margin-top: 0;
+    padding: 20px;
+}
+#heading{
+    text-align: center;
+    background-color: #CCD3CA;
+    color: #04050b;
+    font-weight: bolder; 
+    font-size: xx-large;
+    margin: 0;
+}
+.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 28px;
+    background: #c17283;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+    margin: 20px;
+    float: center;
+    width: 100%; 
+    max-width: 500px;
+}
+    
+    
+  
+  .btn:hover {
+    background: #da899a;
+    text-decoration: none;
+  }
+  #home-screen{
+    margin: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    color: #F5E8DD;
+  }
+    section {
+        background-color: #F5E8DD;
+        position: relative;
+    margin: 130px;
+    box-shadow: 0 4px 8px 0 #8c98ab;
+    transition: 0.3s;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+section:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .small-btn {
+    align-self: flex-end;
+    background-color: #ee839a;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.small-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+.small{
+ background-color: #B5C0D0;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.result1,.result2,.result3{
+    padding :10px;
+  }
+  #inputStr,#inputNum,#subTotal,#tipPercentage {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+  .is-palindrome{
+    color:green;
+  }
+  .is-not-palindrome{
+    color:red;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color:#CCD3CA;
+  }
+
+@media only screen and (max-width: 600px) {
+  #home-screen {
+    margin: 50px;
+  }
+  section {
+    margin: 30px
+  }
+  #inputStr, #inputNum, #subTotal, #tipPercentage {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #home-screen {
+    margin: 180px;
+  }
+  section {
+    margin: 130px; /* Your original margin for larger screens */
+  }
+  #inputStr, #inputNum, #subTotal, #tipPercentage {
+    width: 300px; /* Your original width for input fields */
+  }
+}
